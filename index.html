@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+
+    <header class="cabeçalho">
+        <div class="container">
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Controle/Agenda</h1>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Aplicação de Controle/Agenda</h2>
+    </section>
+
+    <main class="principal">
+        <h2 class="principal__titulo">Login</h2>
+
+        <form class="principal__formulario" id="formulario">
+            <h3 class="principal__subtitulo">Dados do Usuário</h3>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="nome">Usuário</label>
+                <input name="user" id="user" class="campo__escrita" required />
+            </div>
+
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="email">Senha</label>
+                <input name="password" id="password" type="password" class="campo__escrita" required />
+            </div>
+
+            <input type="submit" value="Enviar formulário" class="formulario__botao" id="enviar" onclick="onclick={(e) => getDataUser(e)">
+        </form>
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
